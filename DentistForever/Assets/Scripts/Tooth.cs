@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
-public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd
+public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
 {
     public int RemainingHealth { get { return Mathf.RoundToInt(_currentHealth); } }
 
@@ -48,5 +48,10 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd
         _gameRunning = false;
 
         await UniTask.Yield();
+    }
+
+    public void SetPausedState(bool isPaused)
+    {
+        _gameRunning = !isPaused;
     }
 }

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
-public class ConveyorBelt : MonoBehaviour, IOnGameStart, IOnGameEnd
+public class ConveyorBelt : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
 {
     [SerializeField] private GameObject[] _foods;
     [SerializeField] private float _startDelay;
@@ -13,6 +13,7 @@ public class ConveyorBelt : MonoBehaviour, IOnGameStart, IOnGameEnd
     [SerializeField] private float _foodMoveSpeed;
 
     private CancellationTokenSource _cancellationTokenSource;
+    private bool _gamePaused;
 
     public async void OnGameStart()
     {
@@ -21,6 +22,11 @@ public class ConveyorBelt : MonoBehaviour, IOnGameStart, IOnGameEnd
         await UniTask.Delay((int)(_startDelay * 1000), false, PlayerLoopTiming.Update, _cancellationTokenSource.Token);
 
         await UniTask.WhenAny(SpawnFood(_cancellationTokenSource.Token), MoveFood(_cancellationTokenSource.Token));
+    }
+
+    public void SetPausedState(bool isPaused)
+    {
+        _gamePaused = isPaused;
     }
 
     public async UniTask OnGameEnd(CancellationToken cancellationToken)
@@ -36,6 +42,14 @@ public class ConveyorBelt : MonoBehaviour, IOnGameStart, IOnGameEnd
         {
             _cancellationTokenSource.Dispose(); 
         }
+
+        _gamePaused = false;
+    }
+
+    private void OnDestroy()
+    {
+        if (_cancellationTokenSource != null)
+            _cancellationTokenSource.Cancel();
     }
 
     private async UniTask SpawnFood(CancellationToken cancellationToken)
@@ -44,16 +58,19 @@ public class ConveyorBelt : MonoBehaviour, IOnGameStart, IOnGameEnd
 
         while (!cancellationToken.IsCancellationRequested)
         {
-            await UniTask.Yield();
-
-            spawnTimer += Time.deltaTime;
-
-            if (spawnTimer >= _timePerSpawn)
+            if (!_gamePaused)
             {
-                SpawnFood();
+                spawnTimer += Time.deltaTime;
 
-                spawnTimer = 0f;
+                if (spawnTimer >= _timePerSpawn)
+                {
+                    SpawnFood();
+
+                    spawnTimer = 0f;
+                } 
             }
+
+            await UniTask.Yield();
         }
     }
 
@@ -61,14 +78,17 @@ public class ConveyorBelt : MonoBehaviour, IOnGameStart, IOnGameEnd
     {
         while (!cancellationToken.IsCancellationRequested)
         {
-            await UniTask.Yield();
-
-            for (int i = 0; i < _foodParent.childCount; i++)
+            if (!_gamePaused)
             {
-                Transform child = _foodParent.GetChild(i);
+                for (int i = 0; i < _foodParent.childCount; i++)
+                {
+                    Transform child = _foodParent.GetChild(i);
 
-                child.position += _foodParent.forward * _foodMoveSpeed * Time.deltaTime;
+                    child.position += _foodParent.forward * _foodMoveSpeed * Time.deltaTime;
+                } 
             }
+
+            await UniTask.Yield();
         }
     }
 
