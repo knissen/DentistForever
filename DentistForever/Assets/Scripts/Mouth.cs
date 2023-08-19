@@ -54,6 +54,21 @@ public class Mouth : MonoBehaviour, IOnGameStart
 
 
         // Splatter food on teeth
+        switch (food.Spread)
+        {
+            case Food.SpreadType.SingleTooth:
+                break;
+            case Food.SpreadType.Random:
+                for (int i = 0; i < food.MaxTeethAffected; i++)
+                {
+                    int index = UnityEngine.Random.Range(0, _teeth.Length);
+
+                    _teeth[index].AddSplat(food.SplatPrefab, food.DPS);
+                }
+                break;
+            default:
+                break;
+        }
     }
 
     private bool AllTeethDead()

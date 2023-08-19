@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class UIUtils
@@ -56,5 +57,11 @@ public class UIUtils
             await Task.Yield();
 
         return actionOnButton;
+    }
+
+    public static Vector3 GetMouseWorldPosition(Camera cam, float zDistance = 20)
+    {
+        Vector3 mousePos = (Vector3)Mouse.current.position.ReadValue() + new Vector3(0, 0, zDistance);
+        return cam.ScreenToWorldPoint(mousePos);
     }
 }

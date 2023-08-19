@@ -12,13 +12,17 @@ public class Food : MonoBehaviour
     public FoodType Type { get { return _type; } }
     public float DPS { get { return _damagePerSecond; } }
     public SpreadType Spread { get { return _spreadType; } }
+    public int MaxTeethAffected { get { return _maxTeethAffected; } }
+    public GameObject SplatPrefab { get { return _projectorPrefab; } }
 
     [SerializeField] private float _damagePerSecond;
     [SerializeField] private FoodType _type;
     [SerializeField] private SpreadType _spreadType;
+    [SerializeField] private int _maxTeethAffected = 5;
 
     [SerializeField] private ParticleSystem _eatParticleSystem;
     [SerializeField] private int _emissionCount = 20;
+    [SerializeField] private GameObject _projectorPrefab;
 
     private Mouth _mouth;
     private bool _isBeingEaten;
