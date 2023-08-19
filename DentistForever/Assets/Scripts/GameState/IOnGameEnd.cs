@@ -2,10 +2,9 @@ using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
-using System.Threading.Tasks;
 using UnityEngine;
 
-public interface IOnGameInit
+public interface IOnGameEnd
 {
-    public UniTask OnGameInit(CancellationToken cancellationToken);
+    public UniTask OnGameEnd(CancellationToken cancellationToken);
 }

@@ -41,7 +41,7 @@ public class GameStateManager : MonoBehaviour
 
         for (int i = 0; i < initComponents.Count; i++)
         {
-            tasks.Add(initComponents[i].IOnGameInit(cancellationTokenSource.Token));
+            tasks.Add(initComponents[i].OnGameInit(cancellationTokenSource.Token));
         }
 
         await UniTask.WhenAll(tasks);
@@ -61,5 +61,32 @@ public class GameStateManager : MonoBehaviour
         }
 
         Debug.Log("Gameplay started in Initializer");
+
+        cancellationTokenSource.Dispose();
+    }
+
+    public async void EndGame()
+    {
+        cancellationTokenSource = new CancellationTokenSource();
+
+        List<IOnGameEnd> endComponents = new List<IOnGameEnd>();
+
+        GameObject[] rootObjects = SceneManager.GetActiveScene().GetRootGameObjects();
+
+        for (int i = 0; i < rootObjects.Length; i++)
+        {
+            endComponents.AddRange(rootObjects[i].GetComponentsInChildren<IOnGameEnd>());
+        }
+
+        List<UniTask> tasks = new List<UniTask>();
+
+        for (int i = 0; i < endComponents.Count; i++)
+        {
+            tasks.Add(endComponents[i].OnGameEnd(cancellationTokenSource.Token));
+        }
+
+        await UniTask.WhenAll(tasks);
+
+        Debug.Log("All tasks initialized");
     }
 }

@@ -9,7 +9,12 @@ public class FadeOnSceneStart : MonoBehaviour, IOnGameInit
     [SerializeField] private CanvasGroup _canvasGroup;
     [SerializeField] private float _fadeTime;
 
-    public async UniTask IOnGameInit(CancellationToken cancellationToken)
+    private void Awake()
+    {
+        _canvasGroup.alpha = 1f;
+    }
+
+    public async UniTask OnGameInit(CancellationToken cancellationToken)
     {
         _canvasGroup.alpha = 1;
 
