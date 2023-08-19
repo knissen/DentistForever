@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class BrushTool : MonoBehaviour, IToothTool
 {
@@ -11,8 +12,11 @@ public class BrushTool : MonoBehaviour, IToothTool
 
     public void UseTool(Tooth tooth)
     {
-        _foamParticles.Emit(_particlesEmitRate);
+        if(Mouse.current.delta.magnitude > _minDeltaToActivate)
+        {
+            _foamParticles.Emit(_particlesEmitRate);
 
-        tooth.RestoreHealth(_cleaningRate * Time.deltaTime);
+            tooth.RestoreHealth(_cleaningRate * Time.deltaTime);
+        }
     }
 }

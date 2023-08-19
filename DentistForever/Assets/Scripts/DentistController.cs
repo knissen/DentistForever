@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DentistController : MonoBehaviour, IOnGameStart, IOnGameEnd
 {
@@ -50,7 +51,7 @@ public class DentistController : MonoBehaviour, IOnGameStart, IOnGameEnd
     {
         _ZDistance = new Vector3(0, 0, _maxZDistance);
 
-        Vector3 mousePos = Input.mousePosition + _ZDistance;
+        Vector3 mousePos = (Vector3)Mouse.current.position.ReadValue() + _ZDistance;
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(mousePos);
 
         _rayToMouse.direction = Vector3.Normalize(mouseWorldPos - _CameraPosition);
