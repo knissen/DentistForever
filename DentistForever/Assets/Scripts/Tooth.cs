@@ -30,21 +30,23 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
         }
     }
 
-    public void AddSplat(GameObject projectorPrefab, float damageOverTime)
+    public void HitWithFood(GameObject projectorPrefab, float damageOverTime)
     {
-        //Debug.Log("Tooth position " + transform.position);
-        //Debug.DrawLine(Camera.main.transform.position, transform.position, Color.red, 3f);
+        CreateSplat(projectorPrefab);
 
+        _damagePerSecond += damageOverTime;
+    }
+
+    private void CreateSplat(GameObject projectorPrefab)
+    {
         Ray rayFromCamera = new Ray(Camera.main.transform.position, transform.position - Camera.main.transform.position);
 
-        rayFromCamera.origin += _side == JawSide.Lower ? Vector3.up * 0.15f : Vector3.down * 0.15f;
+        rayFromCamera.origin += _side == JawSide.Lower ? Vector3.up * 0.1f : Vector3.down * 0.1f;
 
-        if(Physics.Raycast(rayFromCamera, out RaycastHit hit, 5))
+        if (Physics.Raycast(rayFromCamera, out RaycastHit hit, 5))
         {
-            Debug.Log("Hit Something!");
-            //Debug.DrawLine(hit.point, hit.normal, Color.red, 3f);
-
-            Vector3 projectorPos = hit.point + hit.normal * _projectorDistance + Random.onUnitSphere * 0.1f;
+            float randomDistnace = Random.Range(_projectorDistance * 0.5f, _projectorDistance * 1.5f);
+            Vector3 projectorPos = hit.point + hit.normal * randomDistnace + Random.onUnitSphere * 0.1f;
             Quaternion lookAtToothRot = Quaternion.LookRotation(hit.point - projectorPos);
 
             GameObject projectorObj = Instantiate(projectorPrefab, projectorPos, lookAtToothRot, transform);
@@ -62,6 +64,19 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
         else
         {
             _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, _startingHealth);
+        }
+
+        for (int i = _splats.Count - 1; i >= 0; i--)
+        {
+            float currentFov = _splats[i].fieldOfView;
+            _splats[i].fieldOfView = Mathf.MoveTowards(currentFov, 0f, amount * 10);
+
+            if (_splats[i].fieldOfView <= 0)
+            {
+                Destroy(_splats[i].gameObject);
+
+                _splats.RemoveAt(i);
+            }
         }
     }
 

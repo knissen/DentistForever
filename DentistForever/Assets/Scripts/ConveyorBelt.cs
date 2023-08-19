@@ -54,7 +54,7 @@ public class ConveyorBelt : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaus
 
     private async UniTask SpawnFood(CancellationToken cancellationToken)
     {
-        float spawnTimer = 0f;
+        float spawnTimer = _timePerSpawn - 1f;
 
         while (!cancellationToken.IsCancellationRequested)
         {

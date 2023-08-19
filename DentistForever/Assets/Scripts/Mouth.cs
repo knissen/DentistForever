@@ -63,7 +63,7 @@ public class Mouth : MonoBehaviour, IOnGameStart
                 {
                     int index = UnityEngine.Random.Range(0, _teeth.Length);
 
-                    _teeth[index].AddSplat(food.SplatPrefab, food.DPS);
+                    _teeth[index].HitWithFood(food.SplatPrefab, food.DPS);
                 }
                 break;
             default:

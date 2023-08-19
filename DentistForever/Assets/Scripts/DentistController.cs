@@ -64,6 +64,8 @@ public class DentistController : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGam
 
             if(_hitBuffer[0].transform.gameObject.TryGetComponent(out Tooth tooth))
             {
+                //Debug.Log("Over tooth: " + tooth.name);
+
                 _selectedTool.UseTool(tooth);
             }
         }
