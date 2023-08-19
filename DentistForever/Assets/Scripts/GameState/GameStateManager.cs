@@ -1,4 +1,5 @@
 using Cysharp.Threading.Tasks;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
@@ -46,7 +47,7 @@ public class GameStateManager : MonoBehaviour
 
         await UniTask.WhenAll(tasks);
 
-        Debug.Log("All tasks initialized");
+        //Debug.Log("All tasks initialized");
 
         List<IOnGameStart> startComponents = new List<IOnGameStart>();
 
@@ -60,9 +61,14 @@ public class GameStateManager : MonoBehaviour
             startComponents[i].OnGameStart();
         }
 
-        Debug.Log("Gameplay started in Initializer");
+        //Debug.Log("Gameplay started in Initializer");
 
         cancellationTokenSource.Dispose();
+    }
+
+    public void RestartGame()
+    {
+        Debug.Log("Restart Game Called");   
     }
 
     public async void EndGame()
@@ -87,6 +93,33 @@ public class GameStateManager : MonoBehaviour
 
         await UniTask.WhenAll(tasks);
 
-        Debug.Log("All tasks initialized");
+        Debug.Log("All GameEnd Tasks Called");
+    }
+
+    public void PauseGame()
+    {
+        SetPauseState(true);
+    }
+
+    public void UnPauseGame()
+    {
+        SetPauseState(false);
+    }
+
+    private void SetPauseState(bool isPaused)
+    {
+        GameObject[] rootObjects = SceneManager.GetActiveScene().GetRootGameObjects();
+
+        List<IOnGamePaused> pauseComponents = new List<IOnGamePaused>();
+
+        for (int i = 0; i < rootObjects.Length; i++)
+        {
+            pauseComponents.AddRange(rootObjects[i].GetComponentsInChildren<IOnGamePaused>());
+        }
+
+        for (int i = 0; i < pauseComponents.Count; i++)
+        {
+            pauseComponents[i].SetPausedState(isPaused);
+        }
     }
 }

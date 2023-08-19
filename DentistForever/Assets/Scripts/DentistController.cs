@@ -6,7 +6,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class DentistController : MonoBehaviour, IOnGameStart, IOnGameEnd
+public class DentistController : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
 {
     [SerializeField] private LayerMask _collisionLayers;
     [SerializeField] private Transform _toolParent;
@@ -30,7 +30,7 @@ public class DentistController : MonoBehaviour, IOnGameStart, IOnGameEnd
 
         _enabled = true;
 
-        Debug.Log("Dentist Enabled");
+        //Debug.Log("Dentist Enabled");
     }
 
     public async UniTask OnGameEnd(CancellationToken cancellationToken)
@@ -71,5 +71,10 @@ public class DentistController : MonoBehaviour, IOnGameStart, IOnGameEnd
         {
             _toolParent.position = mouseWorldPos;
         }
+    }
+
+    public void SetPausedState(bool isPaused)
+    {
+        _enabled = !isPaused;
     }
 }

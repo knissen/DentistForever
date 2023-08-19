@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,7 +17,11 @@ public class Food : MonoBehaviour
     [SerializeField] private FoodType _type;
     [SerializeField] private SpreadType _spreadType;
 
+    [SerializeField] private ParticleSystem _eatParticleSystem;
+    [SerializeField] private int _emissionCount = 20;
+
     private Mouth _mouth;
+    private bool _isBeingEaten;
 
     public void Init(Mouth mouthObject)
     {
@@ -27,19 +32,28 @@ public class Food : MonoBehaviour
     {
         if (ShouldBeEaten())
         {
+            _isBeingEaten = true;
+
             _mouth.EatFood(this);
+
             DestroyFood();
         }
     }
 
     private bool ShouldBeEaten()
     {
+        if (_isBeingEaten) return false;
+
         return (transform.position.z < _mouth.EatFoodPosition.z);
     }
 
-    private void DestroyFood()
+    private async void DestroyFood()
     {
         //Debug.Log("Destroying Food " + gameObject.name);
+
+        _eatParticleSystem.Emit(_emissionCount);
+
+        await UniTask.Delay((int)(_eatParticleSystem.main.duration * 1000));
 
         Destroy(gameObject);
     }
