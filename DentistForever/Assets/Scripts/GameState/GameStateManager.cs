@@ -47,7 +47,7 @@ public class GameStateManager : MonoBehaviour
 
         await UniTask.WhenAll(tasks);
 
-        Debug.Log("All tasks initialized");
+        //Debug.Log("All tasks initialized");
 
         List<IOnGameStart> startComponents = new List<IOnGameStart>();
 
@@ -61,7 +61,7 @@ public class GameStateManager : MonoBehaviour
             startComponents[i].OnGameStart();
         }
 
-        Debug.Log("Gameplay started in Initializer");
+        //Debug.Log("Gameplay started in Initializer");
 
         cancellationTokenSource.Dispose();
     }

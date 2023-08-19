@@ -30,7 +30,7 @@ public class DentistController : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGam
 
         _enabled = true;
 
-        Debug.Log("Dentist Enabled");
+        //Debug.Log("Dentist Enabled");
     }
 
     public async UniTask OnGameEnd(CancellationToken cancellationToken)

@@ -48,6 +48,8 @@ public class Mouth : MonoBehaviour, IOnGameStart
 
     public void EatFood(Food food)
     {
+        food.transform.parent = null;
+
         // Trigger Eat animation
 
 
