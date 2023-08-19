@@ -49,5 +49,6 @@ public class TitleMenuManager : MonoBehaviour
 #else
         Application.Quit(); 
 #endif
+        await UniTask.Yield();
     }
 }

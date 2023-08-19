@@ -39,7 +39,7 @@ public class Food : MonoBehaviour
 
     private void DestroyFood()
     {
-        Debug.Log("Destroying Food " + gameObject.name);
+        //Debug.Log("Destroying Food " + gameObject.name);
 
         Destroy(gameObject);
     }
