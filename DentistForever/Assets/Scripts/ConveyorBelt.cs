@@ -76,6 +76,11 @@ public class ConveyorBelt : MonoBehaviour, IOnGameStart, IOnGameEnd
     {
         GameObject foodToSpawn = _foods[Random.Range(0, _foods.Length - 1)];
 
-        Instantiate(foodToSpawn, _foodParent.position, Quaternion.identity, _foodParent);
+        GameObject foodObject = Instantiate(foodToSpawn, _foodParent.position, Quaternion.identity, _foodParent);
+
+        if(foodObject.TryGetComponent(out Food fd))
+        {
+            fd.Init(Mouth.Instance);
+        }
     }
 }
