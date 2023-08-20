@@ -1,5 +1,37 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &822880441262667554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6083245825139119025}
+  m_Layer: 0
+  m_Name: MeshParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6083245825139119025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822880441262667554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1167453202327780511}
+  m_Father: {fileID: 362500199808964610}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2618281900550675079
 GameObject:
   m_ObjectHideFlags: 0
@@ -4901,7 +4933,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7203876724270601152}
-  - {fileID: 1167453202327780511}
+  - {fileID: 6083245825139119025}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4922,8 +4954,9 @@ MonoBehaviour:
   _spreadType: 1
   _maxTeethAffected: 10
   _eatParticleSystem: {fileID: 2408539384284794401}
-  _emissionCount: 50
+  _emissionCount: 70
   _projectorPrefab: {fileID: 4383526519042907807, guid: f6e27ac9d19f353409232df0452b33f2, type: 3}
+  _meshTransform: {fileID: 6083245825139119025}
   _eatenEmitter: {fileID: 8663585120460889866}
 --- !u!114 &8663585120460889866
 MonoBehaviour:
@@ -4961,11 +4994,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 362500199808964610}
+    m_TransformParent: {fileID: 6083245825139119025}
     m_Modifications:
     - target: {fileID: 1562194094467115753, guid: 733ffd0275828154183ec0b0a0bcbebc, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1562194094467115753, guid: 733ffd0275828154183ec0b0a0bcbebc, type: 3}
       propertyPath: m_LocalPosition.x

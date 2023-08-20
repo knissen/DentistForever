@@ -4924,6 +4924,7 @@ MonoBehaviour:
   _eatParticleSystem: {fileID: 1340215253819899527}
   _emissionCount: 50
   _projectorPrefab: {fileID: 4383526519042907807, guid: f6e27ac9d19f353409232df0452b33f2, type: 3}
+  _meshTransform: {fileID: 1799913477785539988}
   _eatenEmitter: {fileID: 5462448124616617900}
 --- !u!114 &5462448124616617900
 MonoBehaviour:

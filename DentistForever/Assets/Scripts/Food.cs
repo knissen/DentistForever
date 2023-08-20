@@ -1,4 +1,5 @@
 using Cysharp.Threading.Tasks;
+using DG.Tweening;
 using FMODUnity;
 using System;
 using System.Collections;
@@ -16,6 +17,7 @@ public class Food : MonoBehaviour
     public SpreadType Spread { get { return _spreadType; } }
     public int MaxTeethAffected { get { return _maxTeethAffected; } }
     public GameObject SplatPrefab { get { return _projectorPrefab; } }
+    public Transform MeshTransform { get { return _meshTransform; } }
 
     [SerializeField] private float _damagePerSecond;
     [SerializeField] private FoodType _type;
@@ -25,6 +27,7 @@ public class Food : MonoBehaviour
     [SerializeField] private ParticleSystem _eatParticleSystem;
     [SerializeField] private int _emissionCount = 20;
     [SerializeField] private GameObject _projectorPrefab;
+    [SerializeField] private Transform _meshTransform;
 
     [SerializeField] private StudioEventEmitter _eatenEmitter;
 
@@ -43,6 +46,14 @@ public class Food : MonoBehaviour
             _isBeingEaten = true;
 
             _mouth.EatFood(this);
+
+            transform.parent = null;
+
+            Sequence mySequence = DOTween.Sequence();
+            mySequence.PrependInterval(0.15f);
+            mySequence.Append(MeshTransform.DOScaleY(0, 0.15f));
+            mySequence.Append(MeshTransform.DOScaleY(1, 0.15f));
+            mySequence.Play();
 
             DestroyFood();
         }

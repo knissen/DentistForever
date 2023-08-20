@@ -54,9 +54,6 @@ public class Mouth : MonoBehaviour, IOnGameStart
 
     public void EatFood(Food food)
     {
-        food.transform.parent = null;
-        food.transform.DOShakePosition(0.5f, 0.2f);
-
         // Trigger Eat animation
         _mouthAnimator.SetTrigger("Bite");
         _biteEmitter.Play();        

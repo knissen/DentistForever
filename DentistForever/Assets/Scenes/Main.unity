@@ -557,6 +557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 618177810}
   - component: {fileID: 618177809}
+  - component: {fileID: 618177811}
   m_Layer: 0
   m_Name: GameStateManager
   m_TagString: Untagged
@@ -591,6 +592,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &618177811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618177808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1428274352
+      Data2: 1225195978
+      Data3: -39326330
+      Data4: -208915289
+    Path: event:/InGameMuse
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &661845035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,6 +1537,7 @@ MonoBehaviour:
   - {fileID: 2070054763502395632, guid: fc03ddc246f06fd4e9e4ea22f9e6751e, type: 3}
   - {fileID: 1732280749971685011, guid: 6715195349c63cf4ab0d0d26a678fb21, type: 3}
   - {fileID: 3409208106503213142, guid: 4a76c40dfe4ed38488b302e737c29dd7, type: 3}
+  - {fileID: 7028017517107584967, guid: 9845edef5bcefc147a4f3dc66138872c, type: 3}
   _startDelay: 0.5
   _timePerSpawn: 10
   _foodParent: {fileID: 936004498}
