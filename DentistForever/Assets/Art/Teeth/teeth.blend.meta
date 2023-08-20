@@ -3,7 +3,17 @@ guid: ad1f831ae68d1c840bdef79f94cc655d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eruption-chart-600x400
+    second: {fileID: 2100000, guid: c5337cc87f15b2b46aa1aeb42bd1645a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vertexColor
+    second: {fileID: 2100000, guid: 6f43da6348627564a9da0280c079b8ac, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
