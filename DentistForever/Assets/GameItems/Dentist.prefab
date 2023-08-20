@@ -4861,7 +4861,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _foamParticles: {fileID: 2073766731}
   _particlesEmitRate: 1
-  _cleaningRate: 25
+  _cleaningRate: 30
+  _cleaningDecayRate: 0.25
   _minDeltaToActivate: 6
   _brushTransform: {fileID: 1410125545873401233}
   _brushEmitter: {fileID: 3079385363155801518}
