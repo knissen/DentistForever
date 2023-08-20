@@ -10,6 +10,7 @@ public class Mouth : MonoBehaviour, IOnGameStart
     public Vector3 EatFoodPosition { get { return _eatFoodPosition.position; } }
 
     [SerializeField] private Transform _eatFoodPosition;
+    [SerializeField] private Animator _mouthAnimator;
 
     private bool _gameRunning;
     private Tooth[] _teeth;
@@ -51,6 +52,7 @@ public class Mouth : MonoBehaviour, IOnGameStart
         food.transform.parent = null;
 
         // Trigger Eat animation
+        _mouthAnimator.SetTrigger("Bite");
 
 
         // Splatter food on teeth

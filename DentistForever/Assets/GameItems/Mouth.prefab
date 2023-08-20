@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eatFoodPosition: {fileID: 6120401989984130200}
+  _mouthAnimator: {fileID: 1821585240}
 --- !u!1 &6120401989984130201
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,6 +134,34 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1988431010557778438, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.158
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988431010557778438, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.153
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988431010557778438, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8078604
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988431010557778438, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.58937395
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988431010557778438, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988431010557778438, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988431010557778438, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -72.225
+      objectReference: {fileID: 0}
     - target: {fileID: 2129914161812035700, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -151,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2382901936065898606, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2393524915655985235, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
       propertyPath: m_Layer
@@ -240,6 +269,26 @@ PrefabInstance:
     - target: {fileID: 3271491136359673911, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317756504243046767, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317756504243046767, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.069
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317756504243046767, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.527429
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317756504243046767, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.8495992
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317756504243046767, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -116.336
       objectReference: {fileID: 0}
     - target: {fileID: 3335520623994851155, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
       propertyPath: m_Layer
@@ -359,7 +408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7598004411104926228, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7714724085546292311, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
       propertyPath: m_Layer
@@ -442,7 +491,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &65020375442405617 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6059301382647105134, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -478,7 +527,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &642501391602339154 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6636782693490635725, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -514,7 +563,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &1018281860792201323 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6544188599483551476, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -550,7 +599,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &1871392757163378481 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5550841447104166318, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -586,7 +635,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &1961919618618275271 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5749454402868104024, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -622,7 +671,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &2029516455857701622 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5249582362633419881, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -658,7 +707,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &2031316637445812443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5242373133588139588, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -694,7 +743,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &2160258837964533576 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5263246547769414103, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -730,7 +779,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &2317435927465089913 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8419803430886188518, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -766,7 +815,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &2348310123554858219 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8387627421623261812, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -802,7 +851,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &2625055063035425855 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8114950538796190368, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -838,7 +887,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &2662585831691984364 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8071416565538743155, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -874,7 +923,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &4320779644546606554 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8000212764829064005, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -910,7 +959,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &4602746442056854216 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7714724085546292311, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -946,7 +995,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &4617889191329140995 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1505892149274931100, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -982,7 +1031,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &5925841764297614346 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 490004636669631125, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1018,7 +1067,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &6469531655960496382 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 952632187045639777, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1054,7 +1103,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &6749952640499580422 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 674606489694961817, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1090,7 +1139,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &6829684421079362071 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 736304340006507656, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1126,7 +1175,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &6872665161167420327 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 833330461752739128, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1162,7 +1211,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &6894603323565968063 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 819237452227965984, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1198,7 +1247,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &7376998782940096852 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3643504869894838219, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1234,7 +1283,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &7496006267062091141 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4393016061269148442, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1270,7 +1319,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &7641228653656548849 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4538240666272193390, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1306,7 +1355,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &7924960178336387535 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4110401511581134672, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1342,7 +1391,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &8094541561658191403 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2640692159708876980, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1378,7 +1427,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &8141217847643659652 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2597278810877469467, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1414,7 +1463,33 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
+--- !u!1 &8471248645541974273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2413897430402019230, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
+  m_PrefabInstance: {fileID: 6120401990508805791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1821585240
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8471248645541974273}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a237bbb9e1db04c45a18242a2e79d56f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8494296327592777457 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2382901936065898606, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1469,7 +1544,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &8828583091665863619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3347692558223244636, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1505,7 +1580,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &8983510929946545568 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2908162861045084991, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1541,7 +1616,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!1 &9001643010165635731 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2890268285001139212, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
@@ -1577,7 +1652,7 @@ MonoBehaviour:
   _damagePerSecond: 0
   _startingHealth: 100
   _currentHealth: 0
-  _projectorDistance: 0.4
+  _projectorDistance: 0.6
 --- !u!4 &9134491288571841467 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3041110902966809892, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
