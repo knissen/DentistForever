@@ -40,7 +40,8 @@ public class ConveyorBelt : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaus
 
         if (_cancellationTokenSource != null)
         {
-            _cancellationTokenSource.Dispose(); 
+            _cancellationTokenSource.Dispose();
+            _cancellationTokenSource = null;
         }
 
         _gamePaused = false;
