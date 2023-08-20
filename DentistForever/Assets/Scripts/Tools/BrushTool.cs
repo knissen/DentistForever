@@ -10,6 +10,8 @@ public class BrushTool : MonoBehaviour, IToothTool
     [SerializeField] private ParticleSystem _foamParticles;
     [SerializeField] private int _particlesEmitRate;
     [SerializeField] private float _cleaningRate = 1f;
+    [Tooltip("How much the cleaning rate drops per second")]
+    [SerializeField] private float _cleaningDecayRate = 0.25f;
     [SerializeField] private float _minDeltaToActivate = 0.5f;
     [SerializeField] private Transform _brushTransform;
 
@@ -20,16 +22,21 @@ public class BrushTool : MonoBehaviour, IToothTool
     private float _audioTimer;
     private float _camX;
     private float _camY;
+    private float _currentCleaningRate;
 
     private void Start()
     {
         _camX = Camera.main.transform.position.x;
         _camY = Camera.main.transform.position.y;
+
+        _currentCleaningRate = _cleaningRate;
     }
 
     private void Update()
     {
         AlignTool();
+
+        _currentCleaningRate = Mathf.Clamp(_currentCleaningRate - (Time.deltaTime * _cleaningDecayRate), 5f, _cleaningRate);
     }
 
     private void AlignTool()
