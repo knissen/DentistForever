@@ -314,9 +314,9 @@ ParticleSystemRenderer:
   m_RotateWithStretchDirection: 1
   m_VertexStreams: 00010304
   m_Mesh: {fileID: 459848465774780528, guid: ad1f831ae68d1c840bdef79f94cc655d, type: 3}
-  m_Mesh1: {fileID: 0}
-  m_Mesh2: {fileID: 0}
-  m_Mesh3: {fileID: 0}
+  m_Mesh1: {fileID: 1479366609311433631, guid: ad1f831ae68d1c840bdef79f94cc655d, type: 3}
+  m_Mesh2: {fileID: -2027729629924680025, guid: ad1f831ae68d1c840bdef79f94cc655d, type: 3}
+  m_Mesh3: {fileID: -9144536900739739209, guid: ad1f831ae68d1c840bdef79f94cc655d, type: 3}
   m_MeshWeighting: 1
   m_MeshWeighting1: 1
   m_MeshWeighting2: 1
