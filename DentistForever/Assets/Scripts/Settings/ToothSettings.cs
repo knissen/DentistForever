@@ -14,4 +14,7 @@ public class ToothSettings : ScriptableObject
 
     public Texture2D[] albedoTextures;
     public Texture2D[] metallicTextures;
+
+    public GameObject nerverPrefab;
+    public float nerveSpawnChance = 0.5f;
 }

@@ -20,6 +20,7 @@ public class PauseMenuManager : MonoBehaviour, IOnGameEnd
 
     [SerializeField] private CanvasGroup _canvasGroup;
     [SerializeField] private float _fadeTime = 0.25f;
+    [SerializeField] private GameClock _gameClock;
 
     private CancellationTokenSource _cancellationTokenSource;
     private bool _menuOpen = false;
@@ -112,6 +113,7 @@ public class PauseMenuManager : MonoBehaviour, IOnGameEnd
         await UniTask.Delay(2);
 
         _gameOverMessage.enabled = true;
+        _gameOverMessage.text = string.Format("Total Time: {0}s", Mathf.RoundToInt(_gameClock.gameTotalTime).ToString());
 
         OpenMenu();
     }

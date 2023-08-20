@@ -138,6 +138,14 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused, IOn
 
         _looseAudio.Stop();
         _deadAudio.Play();
+
+        if (Random.value < _settings.nerveSpawnChance)
+        {
+            GameObject nerve = Instantiate(_settings.nerverPrefab, transform.position, Quaternion.identity, transform.parent);
+
+            if (_side == JawSide.Upper)
+                nerve.transform.Rotate(Vector3.forward, 180); 
+        }
     }
 
     private void TransitionToShaking()

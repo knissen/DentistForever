@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{910aa6db-39ec-49c0-b521-bc42edacd2ca}">
+		<property name="assetPath">
+			<value>HumanGargle_S08HU.236.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.9573333333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ff0e5d77-021a-44b4-b095-c57599da8fce}</destination>
+		</relationship>
+	</object>
+</objects>

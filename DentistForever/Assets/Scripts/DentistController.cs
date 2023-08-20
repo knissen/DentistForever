@@ -1,4 +1,5 @@
 using Cysharp.Threading.Tasks;
+using FMODUnity;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,10 +9,14 @@ using UnityEngine.InputSystem;
 
 public class DentistController : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
 {
+    public static int ToothLayer = 6;
+    public static int NerveLayer = 7;
+
     [SerializeField] private LayerMask _collisionLayers;
     [SerializeField] private Transform _toolParent;
     [SerializeField] private float _maxZDistance;
     [SerializeField] private bool _enabled;
+    [SerializeField] private StudioEventEmitter _screamAudio;
 
     private Vector3 _CameraPosition;
     private Vector3 _ZDistance;
@@ -62,11 +67,18 @@ public class DentistController : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGam
         {
             _toolParent.position = _hitBuffer[0].point;
 
-            if(_hitBuffer[0].transform.gameObject.TryGetComponent(out Tooth tooth))
+            if(_hitBuffer[0].transform.gameObject.layer == ToothLayer)
             {
-                //Debug.Log("Over tooth: " + tooth.name);
+                if (_hitBuffer[0].transform.gameObject.TryGetComponent(out Tooth tooth))
+                {
+                    //Debug.Log("Over tooth: " + tooth.name);
 
-                _selectedTool.UseTool(tooth);
+                    _selectedTool.UseTool(tooth);
+                }
+            }
+            else if(_hitBuffer[0].transform.gameObject.layer == NerveLayer)
+            {
+                _screamAudio.Play();
             }
         }
         else
