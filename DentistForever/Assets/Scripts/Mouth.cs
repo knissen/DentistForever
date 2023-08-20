@@ -1,3 +1,4 @@
+using FMODUnity;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,6 +12,8 @@ public class Mouth : MonoBehaviour, IOnGameStart
 
     [SerializeField] private Transform _eatFoodPosition;
     [SerializeField] private Animator _mouthAnimator;
+
+    [SerializeField] private StudioEventEmitter _biteEmitter;
 
     private bool _gameRunning;
     private Tooth[] _teeth;
@@ -53,7 +56,7 @@ public class Mouth : MonoBehaviour, IOnGameStart
 
         // Trigger Eat animation
         _mouthAnimator.SetTrigger("Bite");
-
+        _biteEmitter.Play();        
 
         // Splatter food on teeth
         switch (food.Spread)

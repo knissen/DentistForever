@@ -1,4 +1,5 @@
 using Cysharp.Threading.Tasks;
+using FMODUnity;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -24,6 +25,8 @@ public class Food : MonoBehaviour
     [SerializeField] private ParticleSystem _eatParticleSystem;
     [SerializeField] private int _emissionCount = 20;
     [SerializeField] private GameObject _projectorPrefab;
+
+    [SerializeField] private StudioEventEmitter _eatenEmitter;
 
     private Mouth _mouth;
     private bool _isBeingEaten;
@@ -57,6 +60,7 @@ public class Food : MonoBehaviour
         //Debug.Log("Destroying Food " + gameObject.name);
 
         _eatParticleSystem.Emit(_emissionCount);
+        _eatenEmitter.Play();
 
         await UniTask.Delay((int)(_eatParticleSystem.main.duration * 1000));
 

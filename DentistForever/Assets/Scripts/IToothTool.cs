@@ -5,4 +5,5 @@ using UnityEngine;
 public interface IToothTool
 {
     public void UseTool(Tooth tooth);
+    public void OffTooth();
 }

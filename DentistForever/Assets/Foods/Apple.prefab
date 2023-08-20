@@ -4883,6 +4883,7 @@ GameObject:
   - component: {fileID: 477468150370059219}
   - component: {fileID: 1667351394422883136}
   - component: {fileID: 5873395398627652229}
+  - component: {fileID: 6678825450037331180}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -4988,3 +4989,35 @@ MonoBehaviour:
   _eatParticleSystem: {fileID: 430112802056394183}
   _emissionCount: 50
   _projectorPrefab: {fileID: 4383526519042907807, guid: 4049734c91b00ee4b903d60962e9b04a, type: 3}
+  _eatenEmitter: {fileID: 6678825450037331180}
+--- !u!114 &6678825450037331180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854338308862348208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 12333147
+      Data2: 1295878394
+      Data3: 1754128015
+      Data4: 720799850
+    Path: event:/AppleEaten
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

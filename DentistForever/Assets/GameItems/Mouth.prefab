@@ -1545,6 +1545,24 @@ MonoBehaviour:
   _damagePerSecond: 0
   _currentHealth: 0
   _projectorDistance: 0.6
+--- !u!1 &8766236889435306556 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3267334246907872419, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}
+  m_PrefabInstance: {fileID: 6120401990508805791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6120401990478514851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8766236889435306556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &8828583091665863619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3347692558223244636, guid: 1ba7c016c7d38b645bb375da0742626c, type: 3}

@@ -1755,6 +1755,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 423028206, guid: 8da5fa18466507e49a797fd09f3bc0e0, type: 3}
+      propertyPath: _audioCoolDownRate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 423028206, guid: 8da5fa18466507e49a797fd09f3bc0e0, type: 3}
+      propertyPath: _minDeltaToActivate
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 729024390977189081, guid: 8da5fa18466507e49a797fd09f3bc0e0, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1812,6 +1820,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1543192046, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6120401989701319662, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _biteEmitter
+      value: 
+      objectReference: {fileID: 6120401990478514853}
     - target: {fileID: 6120401989701319663, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
       propertyPath: m_Name
       value: Mouth
@@ -1860,5 +1876,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1543192046, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+--- !u!1 &6120401990478514850 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8494296327592777457, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6120401990478514851
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120401990478514850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.223886, y: 1.0205444, z: 0.45832646}
+  m_Center: {x: 0, y: -0.055196002, z: -0.15}
+--- !u!1 &6120401990478514852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6120401989701319663, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6120401990478514853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120401990478514852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 611002948
+      Data2: 1204307889
+      Data3: -694208341
+      Data4: -1689661256
+    Path: event:/MouthBite
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

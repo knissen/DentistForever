@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{2e99675a-85bb-460a-bf29-4f85c086fcc5}">
+		<property name="assetPath">
+			<value>ESM_Explainer_Video_One_Shot_Foley_Misc_Food_Apple_Owen_Bite_Chomp_Eat_Fruit_Crunch_Juicy_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ff0e5d77-021a-44b4-b095-c57599da8fce}</destination>
+		</relationship>
+	</object>
+</objects>

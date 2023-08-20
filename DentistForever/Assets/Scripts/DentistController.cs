@@ -72,6 +72,8 @@ public class DentistController : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGam
         else
         {
             _toolParent.position = mouseWorldPos;
+
+            _selectedTool.OffTooth();
         }
     }
 
