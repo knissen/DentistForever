@@ -12,7 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f670a93488ae9646a081bd8ca664d9e, type: 3}
   m_Name: DefaultToothSettings
   m_EditorClassIdentifier: 
-  startingHealth: 100
+  maxHealth: 100
+  startingHealth: 80
   maxDPS: 8
   shakingThreshold: 20
   ejectForce: 10
+  ejectUpBias: 1.5
+  albedoTextures:
+  - {fileID: 2800000, guid: 1a8b8562f97b2b64faff9f7c2e25e422, type: 3}
+  - {fileID: 2800000, guid: 2231c90977449ee4082270c8cab59c6a, type: 3}
+  - {fileID: 2800000, guid: 83b1c78e152e49e4ca2b43ac35ffe675, type: 3}
+  - {fileID: 2800000, guid: 785808e5bd8a6cb47a77a41b98670439, type: 3}
+  - {fileID: 2800000, guid: 2256cccd7410b9047b97438d2990a105, type: 3}
+  - {fileID: 2800000, guid: 3a5458529cb257e46951f84bd294d90b, type: 3}
+  metallicTextures:
+  - {fileID: 2800000, guid: afd2fb4a239308645a02946339b4a164, type: 3}
+  - {fileID: 2800000, guid: 0d02c5cb4c4a8164098311e10ae37cfe, type: 3}
+  - {fileID: 2800000, guid: 423a39dd0c8aacb429d9ffabd8618d97, type: 3}
+  - {fileID: 2800000, guid: c554fa7bc0179144baf76972e3855066, type: 3}
+  - {fileID: 2800000, guid: 602760da01276e846b54db488ae417a2, type: 3}
+  - {fileID: 2800000, guid: 67e15e704029b9e4c804286fde4cdccb, type: 3}

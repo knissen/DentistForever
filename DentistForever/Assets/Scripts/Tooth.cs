@@ -5,7 +5,7 @@ using System.Threading;
 using UnityEngine;
 using DG.Tweening;
 
-public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
+public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused, IOnGameInit
 {
     public enum JawSide { Upper, Lower }
     private enum ToothState { Healthy, Shaking, Dead }
@@ -24,6 +24,35 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
     private ToothState _currentState;
     private bool _gameRunning;
     private List<Projector> _splats = new List<Projector>();
+    private int _currentTexIndex;               // Current index into the texture array based on remaining health
+    private MeshRenderer _meshRenerer;
+
+    private void Awake()
+    {
+        _meshRenerer = GetComponent<MeshRenderer>();        
+    }
+
+    public async UniTask OnGameInit(CancellationToken cancellationToken)
+    {
+        _currentHealth = _settings.startingHealth;
+        _currentTexIndex = -1;
+
+        UpdateTextures();
+
+        await UniTask.Yield();
+    }
+
+    public void OnGameStart()
+    {
+        _gameRunning = true;
+    }
+
+    public async UniTask OnGameEnd(CancellationToken cancellationToken)
+    {
+        _gameRunning = false;
+
+        await UniTask.Yield();
+    }
 
     private void Update()
     {
@@ -31,7 +60,7 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
 
         if(_damagePerSecond > 0)
         {
-            _currentHealth -= _damagePerSecond * Time.deltaTime;
+            _currentHealth = Mathf.Clamp(_currentHealth - (_damagePerSecond * Time.deltaTime), 0, _settings.maxHealth);
         }
 
         UpdateToothState();
@@ -44,17 +73,36 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
             case ToothState.Healthy:
                 if(_currentHealth < _settings.shakingThreshold)
                     TransitionToShaking();
+                UpdateTextures();
                 break;
             case ToothState.Shaking:
                 if (_currentHealth <= 0f)
                     TransitionToDead();
                 else if (_currentHealth > _settings.shakingThreshold)
                     TransitionToHealthy();
+                UpdateTextures();
                 break;
             case ToothState.Dead:
                 break;
             default:
                 break;
+        }
+    }
+
+    private void UpdateTextures()
+    {
+        // Get the correct index into the texture array based on current health, if health == 0 we potentially get an index too high because of float math
+        int nextTexIndex = _currentHealth == 0 ? 5 : Mathf.FloorToInt((_settings.maxHealth - _currentHealth) / ((_settings.maxHealth) / _settings.albedoTextures.Length));
+
+        if(nextTexIndex != _currentTexIndex)
+        {
+            if (nextTexIndex < 0 || nextTexIndex >= _settings.albedoTextures.Length)
+                Debug.LogError(string.Format("Wrong Index! {0}, CurrentHealth:{1}", nextTexIndex, _currentHealth));
+
+            _meshRenerer.material.SetTexture("_MainTex", _settings.albedoTextures[nextTexIndex]);
+            _meshRenerer.material.SetTexture("_MetallicGlossMap", _settings.metallicTextures[nextTexIndex]);
+
+            _currentTexIndex = nextTexIndex;
         }
     }
 
@@ -87,10 +135,7 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
     {
         _currentState = ToothState.Shaking;
 
-        transform.DOShakePosition(3f, 0.03f);
-
-        var renderer = GetComponent<MeshRenderer>();
-        renderer.material.SetColor("_Color", Color.black);
+        transform.DOShakePosition(5f, 0.03f);
     }
 
     public void HitWithFood(GameObject projectorPrefab, float damageOverTime)
@@ -124,11 +169,11 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
     {
         if(_damagePerSecond > 0)
         {
-            _damagePerSecond = Mathf.Clamp(_damagePerSecond - amount, 0, _settings.startingHealth);
+            _damagePerSecond = Mathf.Clamp(_damagePerSecond - amount, 0, _settings.maxHealth);
         }
         else
         {
-            _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, _settings.startingHealth);
+            _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, _settings.maxHealth);
         }
 
         for (int i = _splats.Count - 1; i >= 0; i--)
@@ -148,20 +193,6 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
                 _splats.RemoveAt(i);
             }
         }
-    }
-
-    public void OnGameStart()
-    {
-        _currentHealth = _settings.startingHealth;
-
-        _gameRunning = true;
-    }
-
-    public async UniTask OnGameEnd(CancellationToken cancellationToken)
-    {
-        _gameRunning = false;
-
-        await UniTask.Yield();
     }
 
     public void SetPausedState(bool isPaused)
