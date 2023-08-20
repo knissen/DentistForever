@@ -15,7 +15,7 @@ MonoBehaviour:
   maxHealth: 100
   startingHealth: 80
   maxDPS: 8
-  shakingThreshold: 20
+  shakingThreshold: 16
   ejectForce: 10
   ejectUpBias: 1.5
   albedoTextures:

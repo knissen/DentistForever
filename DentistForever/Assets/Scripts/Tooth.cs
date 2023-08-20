@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 using DG.Tweening;
+using FMODUnity;
 
 public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused, IOnGameInit
 {
@@ -20,6 +21,10 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused, IOn
 
     [Header("Splat Projectors")]
     [SerializeField] private float _projectorDistance = 2f;
+
+    [Header("Audio")]
+    [SerializeField] private StudioEventEmitter _looseAudio;
+    [SerializeField] private StudioEventEmitter _deadAudio;
 
     private ToothState _currentState;
     private bool _gameRunning;
@@ -109,6 +114,7 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused, IOn
     private void TransitionToHealthy()
     {
         _currentState = ToothState.Healthy;
+        _looseAudio.Stop();
 
         DOTween.Clear();
     }
@@ -129,6 +135,9 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused, IOn
 
             body.AddForce(forceDirection, ForceMode.Impulse); 
         }
+
+        _looseAudio.Stop();
+        _deadAudio.Play();
     }
 
     private void TransitionToShaking()
@@ -136,6 +145,7 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused, IOn
         _currentState = ToothState.Shaking;
 
         transform.DOShakePosition(5f, 0.03f);
+        _looseAudio.Play();
     }
 
     public void HitWithFood(GameObject projectorPrefab, float damageOverTime)

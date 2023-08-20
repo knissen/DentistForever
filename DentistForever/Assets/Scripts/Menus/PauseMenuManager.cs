@@ -3,15 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PauseMenuManager : MonoBehaviour
+public class PauseMenuManager : MonoBehaviour, IOnGameEnd
 {
     [SerializeField] private InputAction _openMenuAction;
 
+    [SerializeField] private TextMeshProUGUI _gameOverMessage;
     [SerializeField] private Button _continueGameButton;
     [SerializeField] private Button _restartButton;
     [SerializeField] private Button _quitButton;
@@ -25,6 +27,7 @@ public class PauseMenuManager : MonoBehaviour
     private void Start()
     {
         _canvasGroup.alpha = 0f;
+        _gameOverMessage.enabled = false;
 
         _openMenuAction.performed += OnOpenActoinPressed;
         _openMenuAction.Enable();
@@ -102,5 +105,14 @@ public class PauseMenuManager : MonoBehaviour
     private async Task QuitPressed()
     {
         await SceneManager.LoadSceneAsync("Title");
+    }
+
+    public async UniTask OnGameEnd(CancellationToken cancellationToken)
+    {
+        await UniTask.Delay(2);
+
+        _gameOverMessage.enabled = true;
+
+        OpenMenu();
     }
 }
