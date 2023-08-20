@@ -5087,7 +5087,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BRUSH YOUR TEETH
+  m_text: 'VIRTUAL
+
+    BRUSH YOUR TEETH
+
+    CHAMPION EDITION'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7de7142de13782843af52c8754b29998, type: 2}
   m_sharedMaterial: {fileID: 7417028083494484995, guid: 7de7142de13782843af52c8754b29998, type: 2}
