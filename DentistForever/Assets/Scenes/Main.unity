@@ -1775,14 +1775,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5721922655518729369, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.158
-      objectReference: {fileID: 0}
-    - target: {fileID: 5721922655518729369, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.153
-      objectReference: {fileID: 0}
     - target: {fileID: 6120401989701319663, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
       propertyPath: m_Name
       value: Mouth
@@ -1830,14 +1822,6 @@ PrefabInstance:
     - target: {fileID: 6120401989701319665, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8861677621649930224, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 8861677621649930224, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.069
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}

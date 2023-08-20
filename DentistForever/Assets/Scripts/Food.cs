@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Food : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class Food : MonoBehaviour
     public enum SpreadType { SingleTooth, Random }
 
     public FoodType Type { get { return _type; } }
-    public float DPS { get { return _damagePerSecond; } }
+    public float DPS { get { return _damagePerSecond * Random.Range(0.8f, 1f); } }
     public SpreadType Spread { get { return _spreadType; } }
     public int MaxTeethAffected { get { return _maxTeethAffected; } }
     public GameObject SplatPrefab { get { return _projectorPrefab; } }

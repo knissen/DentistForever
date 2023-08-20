@@ -3,9 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using DG.Tweening;
+
 public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
 {
     public enum JawSide { Upper, Lower }
+    private enum ToothState { Healthy, Shaking, Dead }
 
     public int RemainingHealth { get { return Mathf.RoundToInt(_currentHealth); } }
 
@@ -17,6 +20,10 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
     [Header("Splat Projectors")]
     [SerializeField] private float _projectorDistance = 2f;
 
+    [Header("States")]
+    [SerializeField] private float _shakingThreshold = 20;
+
+    private ToothState _currentState;
     private bool _gameRunning;
     private List<Projector> _splats = new List<Projector>();
 
@@ -28,6 +35,52 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
         {
             _currentHealth -= _damagePerSecond * Time.deltaTime;
         }
+
+        UpdateToothState();
+    }
+
+    private void UpdateToothState()
+    {
+        switch (_currentState)
+        {
+            case ToothState.Healthy:
+                if(_currentHealth < _shakingThreshold)
+                    TransitionToShaking();
+                break;
+            case ToothState.Shaking:
+                if (_currentHealth <= 0f)
+                    TransitionToDead();
+                else if (_currentHealth > _shakingThreshold)
+                    TransitionToHealthy();
+                break;
+            case ToothState.Dead:
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void TransitionToHealthy()
+    {
+        _currentState = ToothState.Healthy;
+
+        DOTween.Clear();
+    }
+
+    private void TransitionToDead()
+    {
+        _currentState = ToothState.Dead;
+
+        DOTween.Clear();
+
+        gameObject.AddComponent<Rigidbody>();
+    }
+
+    private void TransitionToShaking()
+    {
+        _currentState = ToothState.Shaking;
+
+        transform.DOShakePosition(3f, 0.03f);
     }
 
     public void HitWithFood(GameObject projectorPrefab, float damageOverTime)
