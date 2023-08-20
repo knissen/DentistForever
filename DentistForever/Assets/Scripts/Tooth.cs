@@ -19,12 +19,14 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
 
     [Header("Splat Projectors")]
     [SerializeField] private float _projectorDistance = 2f;
+    [SerializeField] private float _maxDPS = 10f;
 
     [Header("States")]
     [SerializeField] private float _shakingThreshold = 20;
 
     private ToothState _currentState;
     private bool _gameRunning;
+    private float _startingFOV;
     private List<Projector> _splats = new List<Projector>();
 
     private void Update()
@@ -87,7 +89,7 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
     {
         CreateSplat(projectorPrefab);
 
-        _damagePerSecond += damageOverTime;
+        _damagePerSecond = Mathf.Clamp(_damagePerSecond + damageOverTime, 0f, _maxDPS);
     }
 
     private void CreateSplat(GameObject projectorPrefab)
@@ -104,7 +106,10 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
 
             GameObject projectorObj = Instantiate(projectorPrefab, projectorPos, lookAtToothRot, transform);
 
-            _splats.Add(projectorObj.GetComponent<Projector>());
+            var proj = projectorObj.GetComponent<Projector>();
+
+            _startingFOV = proj.fieldOfView;
+            _splats.Add(proj);
         }
     }
 
@@ -122,7 +127,12 @@ public class Tooth : MonoBehaviour, IOnGameStart, IOnGameEnd, IOnGamePaused
         for (int i = _splats.Count - 1; i >= 0; i--)
         {
             float currentFov = _splats[i].fieldOfView;
-            _splats[i].fieldOfView = Mathf.MoveTowards(currentFov, 0f, amount * 10);
+            float nextFov = Mathf.Lerp(0f, _maxDPS, _damagePerSecond / _maxDPS);
+
+            if (nextFov < currentFov)
+            {
+                _splats[i].fieldOfView = nextFov;
+            }
 
             if (_splats[i].fieldOfView <= 0)
             {
