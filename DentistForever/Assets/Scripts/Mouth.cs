@@ -2,6 +2,7 @@ using FMODUnity;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Mouth : MonoBehaviour, IOnGameStart
@@ -16,7 +17,7 @@ public class Mouth : MonoBehaviour, IOnGameStart
     [SerializeField] private StudioEventEmitter _biteEmitter;
 
     private bool _gameRunning;
-    private Tooth[] _teeth;
+    private List<Tooth> _teeth;
 
     private void Awake()
     {
@@ -45,7 +46,7 @@ public class Mouth : MonoBehaviour, IOnGameStart
 
     public void OnGameStart()
     {
-        _teeth = GetComponentsInChildren<Tooth>();
+        _teeth = GetComponentsInChildren<Tooth>().ToList();
 
         _gameRunning = true;
     }
@@ -66,8 +67,10 @@ public class Mouth : MonoBehaviour, IOnGameStart
             case Food.SpreadType.Random:
                 for (int i = 0; i < food.MaxTeethAffected; i++)
                 {
-                    int index = UnityEngine.Random.Range(0, _teeth.Length);
+                    if (AllTeethDead())
+                        return;
 
+                    int index = UnityEngine.Random.Range(0, _teeth.Count);
                     _teeth[index].HitWithFood(food.SplatPrefab, food.DPS);
                 }
                 break;
@@ -78,12 +81,12 @@ public class Mouth : MonoBehaviour, IOnGameStart
 
     private bool AllTeethDead()
     {
-        for (int i = 0; i < _teeth.Length; i++)
+        for (int i = _teeth.Count - 1;  i >= 0; i--)
         {
-            if (_teeth[i].RemainingHealth > 0)
-                return false;
+            if (_teeth[i].RemainingHealth <= 0)
+                _teeth.RemoveAt(i);
         }
 
-        return true;
+        return _teeth.Count == 0;
     }
 }

@@ -4929,6 +4929,7 @@ MonoBehaviour:
   _cleaningRate: 20
   _minDeltaToActivate: 6
   _brushEmitter: {fileID: 3079385363155801518}
+  _audioCoolDownRate: 4
 --- !u!114 &3079385363155801518
 MonoBehaviour:
   m_ObjectHideFlags: 0

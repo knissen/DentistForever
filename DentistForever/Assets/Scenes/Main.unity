@@ -123,6 +123,140 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &44860520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5925841764297614346, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &44860526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44860520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &44860527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44860520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &89999598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4617889191329140995, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &89999604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89999598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &89999605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89999598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &245660147
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,6 +322,73 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canvasGroup: {fileID: 245660149}
   _fadeTime: 1
+--- !u!1 &279784579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 58991031406086172, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &279784585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279784579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &279784586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279784579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &291760529
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +626,341 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &335071568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4320779644546606554, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &335071574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335071568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &335071575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335071568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &347286483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6829684421079362071, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &347286489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347286483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &347286490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347286483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &368077060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1018281860792201323, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &368077066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368077060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &368077067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368077060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &458118988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6872665161167420327, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &458118994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458118988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &458118995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458118988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &489370412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 642501391602339154, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &489370418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489370412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &489370419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489370412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &562070054
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,6 +1083,73 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562070054}
   m_CullTransparentMesh: 1
+--- !u!1 &573451679 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2317435927465089913, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &573451685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573451679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &573451686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573451679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &618177808
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,6 +1194,73 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &635780203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8761369294527286952, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &635780209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635780203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &635780210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635780203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &661845035
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,6 +1647,7 @@ RectTransform:
   - {fileID: 2081825146}
   - {fileID: 562070055}
   - {fileID: 713617927}
+  - {fileID: 2052548702}
   m_Father: {fileID: 320101993}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1031,7 +1702,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715585316}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -1064,6 +1735,7 @@ MonoBehaviour:
       m_Action: Open Menu
       m_Flags: 0
     m_Flags: 0
+  _gameOverMessage: {fileID: 2052548703}
   _continueGameButton: {fileID: 2081825147}
   _restartButton: {fileID: 562070056}
   _quitButton: {fileID: 713617928}
@@ -1145,6 +1817,341 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802560797}
   m_CullTransparentMesh: 1
+--- !u!1 &873953231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2348310123554858219, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &873953237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873953231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &873953238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873953231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &898981122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6894603323565968063, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &898981128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898981122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &898981129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898981122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &899355355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8094541561658191403, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &899355361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899355355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &899355362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899355355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &915408757 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8983510929946545568, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &915408763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915408757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &915408764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915408757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &918611168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6749952640499580422, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &918611174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918611168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &918611175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918611168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &936004497
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,6 +2183,140 @@ Transform:
   m_Father: {fileID: 1492588917}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &949813971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9001643010165635731, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &949813977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949813971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &949813978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949813971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &964112173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2160258837964533576, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &964112179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964112173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &964112180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964112173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &969572055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,6 +2414,73 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969572055}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &985506636 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7376998782940096852, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &985506642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985506636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &985506643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985506636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1058877296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,6 +2616,274 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058877296}
   m_CullTransparentMesh: 1
+--- !u!1 &1195791866 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8828583091665863619, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1195791872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195791866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1195791873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195791866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &1313744052 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1871392757163378481, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1313744058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313744052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1313744059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313744052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &1336161081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 65020375442405617, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1336161087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336161081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1336161088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336161081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &1358518795 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8141217847643659652, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1358518801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358518795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1358518802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358518795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1430195114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,6 +2952,140 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1430291972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2662585831691984364, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1430291978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430291972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1430291979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430291972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &1460550224 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2029516455857701622, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1460550230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460550224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1460550231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460550224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1492588915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,6 +3236,543 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1662901847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6469531655960496382, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1662901853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662901847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1662901854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662901847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &1785114441 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4602746442056854216, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1785114447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785114441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1785114448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785114441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &1824556557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7641228653656548849, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1824556563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824556557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1824556564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824556557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &1927156319 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2031316637445812443, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1927156325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927156319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1927156326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927156319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &1974674297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7496006267062091141, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1974674303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974674297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1974674304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974674297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &2052548701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2052548702}
+  - component: {fileID: 2052548704}
+  - component: {fileID: 2052548703}
+  m_Layer: 5
+  m_Name: GameOverTxt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2052548702
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052548701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 715585317}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 157}
+  m_SizeDelta: {x: 400, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2052548703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052548701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: GAME OVER
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 16
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2052548704
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052548701}
+  m_CullTransparentMesh: 1
+--- !u!1 &2065932450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7924960178336387535, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2065932456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065932450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2065932457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065932450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2081825145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,6 +3895,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081825145}
   m_CullTransparentMesh: 1
+--- !u!1 &2139088360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2625055063035425855, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2139088366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139088360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2139088367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139088360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &2143061301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1961919618618275271, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+  m_PrefabInstance: {fileID: 6120401990478514849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2143061307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143061301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1178414136
+      Data2: 1173484396
+      Data3: 566097042
+      Data4: 552882515
+    Path: event:/ToothShaking
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2143061308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143061301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1871428760
+      Data2: 1141871705
+      Data3: -1867642711
+      Data4: -1431855037
+    Path: event:/ToothFallOut
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &729024390647170939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1755,14 +4036,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 423028206, guid: 8da5fa18466507e49a797fd09f3bc0e0, type: 3}
-      propertyPath: _audioCoolDownRate
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 423028206, guid: 8da5fa18466507e49a797fd09f3bc0e0, type: 3}
-      propertyPath: _minDeltaToActivate
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 729024390977189081, guid: 8da5fa18466507e49a797fd09f3bc0e0, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1820,10 +4093,266 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8562348, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 8562348, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 172911103, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 172911103, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 188970203, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 188970203, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 238980235, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 238980235, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 290059743, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 290059743, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 454866045, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 454866045, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 560191736, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 560191736, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 579272670, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 579272670, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 603661099, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 603661099, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 678409044, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 678409044, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 709398898, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 709398898, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 731984870, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 731984870, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 769975728, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 769975728, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 774484772, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 774484772, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 805188078, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 805188078, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 869655086, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 869655086, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 915830972, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 915830972, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 948190887, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 948190887, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 998530259, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 998530259, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 1032793205, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 1032793205, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 1067012617, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 1067012617, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 1175786285, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 1175786285, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 1178767640, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 1178767640, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 1376832024, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 1376832024, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 1389993691, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 1389993691, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 1434101574, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 1434101574, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 1482076655, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 1482076655, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
     - target: {fileID: 1543192046, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
       propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1588442599, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 1588442599, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 1609455164, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 1609455164, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 1860226162, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 1860226162, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 2003779471, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 2003779471, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
+    - target: {fileID: 2141926745, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _deadAudio
+      value: 
+      objectReference: {fileID: 2139088367}
+    - target: {fileID: 2141926745, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
+      propertyPath: _looseAudio
+      value: 
+      objectReference: {fileID: 2139088366}
     - target: {fileID: 6120401989701319662, guid: 2364868c3252f0b4794d6a2df900ed23, type: 3}
       propertyPath: _biteEmitter
       value: 
